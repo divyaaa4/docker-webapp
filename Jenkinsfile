@@ -2,7 +2,7 @@ node {
 
     checkout scm
 
-    docker.withRegistry('https://registry.hub.docker.com', 'docker_Hub') {
+    docker.withRegistry('https://registry.hub.docker.com', 'docker_hub') {
 
         def customImage = docker.build("miltonc/dockerwebapp")
 
